@@ -5,7 +5,7 @@ import (
 	"github.com/aquiles419/imersao-fullcycle/internal/market/entity"
 )
 
-func TransformImput(input dto.TradeInput) *entity.Order {
+func TransformInput(input dto.TradeInput) *entity.Order {
 	asset := entity.NewAsset(input.AssetID, input.AssetID, 1000)
 	investor := entity.NewInvestor(input.IvestorID)
 	order := entity.NewOrder(input.OrderID, investor, asset, input.Shares, input.Price, input.OrderType)
