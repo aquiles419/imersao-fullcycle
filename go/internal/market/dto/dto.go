@@ -2,8 +2,8 @@ package dto
 
 type TradeInput struct {
 	OrderID       string  `json:"order_id"`
-	IvestorId     string  `json:"investor_id"`
-	AssetId       string  `json:"asset_id"`
+	IvestorID     string  `json:"investor_id"`
+	AssetID       string  `json:"asset_id"`
 	CurrentShares int     `json:"current_shares"`
 	Shares        int     `json:"shares"`
 	Price         float64 `json:"price"`
